@@ -26,14 +26,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
-# SECRET_KEY = "django-insecure-hfj@a@+68jy!27n9%v4_p&eb-!65y=uc26rf^jj#t#jmu$tbs*"
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://restaurant-zz0i.onrender.com','https://*.127.0.0.1','http://127.0.0.1:8000/']
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = ['https://restaurant-zz0i.onrender.com','https://*.127.0.0.1','http://127.0.0.1:8000/']
 
 # Application definition
 
