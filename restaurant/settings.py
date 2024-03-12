@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://plant-shop-9cnk.onrender.com','https://*.127.0.0.1','http://127.0.0.1:8000/']
+CSRF_TRUSTED_ORIGINS = ['https://restaurant-zz0i.onrender.com','https://*.127.0.0.1','http://127.0.0.1:8000/']
 
 # Application definition
 
