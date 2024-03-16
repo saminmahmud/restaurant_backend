@@ -55,10 +55,10 @@ def activate(request, uid64, token):
         user.is_active = True
         user.save()
         # return redirect('login')
-        return HttpResponseRedirect('http://127.0.0.1:5500/login')
+        return HttpResponseRedirect('http://127.0.0.1:5500/login.html')
     else:
         # return redirect('register')
-        return HttpResponseRedirect('http://127.0.0.1:5500/register')
+        return HttpResponseRedirect('http://127.0.0.1:5500/signup.html')
     
 
 class UserLoginApiView(APIView):
