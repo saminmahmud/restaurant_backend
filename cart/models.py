@@ -12,20 +12,11 @@ class Cart(models.Model):
 
 
 # signals.py
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from order.models import Order
+# from django.db.models.signals import post_save
+# from django.dispatch import receiver
+# from order.models import Order
 
 # @receiver(post_save, sender=Cart)
 # def create_order(sender, instance, created, **kwargs):
 #     if created:
-#         order = Order.objects.filter(user=instance.user, status='Pending').first()
-#         if not order:
-#             order = Order.objects.create(user=instance.user)
-#         order.cart = instance
-#         order.save()
-
-@receiver(post_save, sender=Cart)
-def create_order(sender, instance, created, **kwargs):
-    if created:
-        Order.objects.create(user=instance.user, food=instance.food, cart=instance, quantity=instance.quantity, status='Pending')
+#         Order.objects.create(user=instance.user, food=instance.food, cart=instance, quantity=instance.quantity, status='Pending')
